@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<!-- LINK -->
+<!-- LINK CSS-->
     <link rel="stylesheet" href="style.css">
+<!-- LINK FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/5d6d6078cc.js" crossorigin="anonymous"></script>
+<!-- LINK BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!-- TITLE -->
     <title>Bootstrap Dashboard</title>
@@ -17,45 +20,39 @@
 <!-- HEADER -->
     <header class="container-fluid">
 
-      <nav class="navbar navbar-expand navbar-light bg-light">
+      <div class="row">
 
-        <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
-        
-        <form>
-          <div class="form">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prova a cercare Lezioni di Larvel">
-          </div>
-        </form>
+        <div id="top-left" class="col-2"><img src="img/logo.svg" alt=""></div>
 
-        <div>
-          <div class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </div>
-
-
-          <div class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </div>
-
-          <div class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </div>
-
-          <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            campanella gialla
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+        <div id="top-middle" class="col-8">
+          <form>
+            <div  class="form">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prova a cercare: Lezioni di Larvel">
             </div>
-          </div>
+          </form>
         </div>
-      </nav>    
 
-      </nav>
+        <div id="top-right" class="col-2">
+            <i id="list" class="fa-solid fa-list"></i>
+            
+            <i id="quest" class="fa-solid fa-circle-question"></i>
+
+            <i id="dots" class="fa-solid fa-ellipsis-vertical"></i>
+
+            <div id="bell" class="dropdown show">
+              <a class=dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i id="orange" class="fa-solid fa-bell"></i>
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+        </div>
+
+      </div>
 
     </header>
 <!-- SIDEBAR -->

@@ -1,8 +1,36 @@
 header {
   height: 90px;
+  margin-top: 15px;
+  margin bottom: 10px;
 }
 
-nav {
-  height: 70px;
-  width: 100%;
+#top-left {
+  
+}
+
+#top-middle {
+  font-size: 30px;
+}
+
+#top-right {
+  
+  text-align: end;
+  align-items: center;
+  flex-direction: row;
+}
+
+#list, #quest, #dots {
+  margin-right: 10px;
+  font-size: 20px;
+  color: grey;
+}
+
+#bell {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#orange {
+  color: orange;
 }
