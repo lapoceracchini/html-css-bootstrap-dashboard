@@ -18,49 +18,88 @@
 <!-- BODY -->
   <body>
 <!-- HEADER -->
-    <header class="container-fluid">
+    <header class="container-fluid d-flex h-100 justify-content-center align-items-center">
 
-      <div class="row">
+      <div class="row w-100 d-flex align-items-center justify-content-between">
 
-        <div id="top-left" class="col-2"><img src="img/logo.svg" alt=""></div>
-
-        <div id="top-middle" class="col-8">
-          <form>
-            <div  class="form">
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prova a cercare: Lezioni di Larvel">
-            </div>
-          </form>
+        <div class="col-auto col-xl-2 p-0 d-flex justify-content-start">
+          <div class="logo-container">
+            <picture>
+              <source media="#" srcset="">
+              <img class="d-none d-lg-block" src="img/logo.svg" alt="">
+              <img class="d-block d-lg-none" src="img/mobile-logo.png" alt="">
+            </picture>
+          </div>
         </div>
 
-        <div id="top-right" class="col-2">
-            <i id="list" class="fa-solid fa-list"></i>
-            
-            <i id="quest" class="fa-solid fa-circle-question"></i>
+        <div class="col">
+          <input id="search" class="form-control" type="search" aria-label="Search" placeholder="&#x1F50E; Prova a cercare : Lezioni di laravel">
+        </div>
 
-            <i id="dots" class="fa-solid fa-ellipsis-vertical"></i>
+        <div id="top-left" class="col-auto col-xl-2 p-0">
 
-            <div id="bell" class="dropdown show">
-              <a class=dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i id="orange" class="fa-solid fa-bell"></i>
+            <div class="d-none d-lg-block" id="space"><i class="fa-solid fa-list"></i></div>
+
+            <div class="d-none d-lg-block" id="space"><i class="fa-solid fa-circle-question"></i></div>
+
+            <div class="d-none d-lg-block" id="space"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                <i id="bell" class="fa-solid fa-bell"></i>
               </a>
             
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Profilo</a>
+                <a class="dropdown-item" href="#">Fatturazione</a>
+                <a class="dropdown-item" href="#">Logout</a>
               </div>
             </div>
+
         </div>
 
       </div>
 
     </header>
+
 <!-- SIDEBAR -->
-    <div class="sidebar"></div>
+    <div class="sidebar" id="sidebar">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 "> 
+            <div class="container px-0 py-3">
+              <div class="row text-center my-2 fs-4">
+                <div class="col col-lg-3 "><i class="fa-solid fa-house"></i></div>
+                <div class="col-lg-9 d-none d-lg-block text-start">Home</div>
+              </div>
+              <div class="row text-center my-2 fs-4">
+                <div class="col col-lg-3 "><i class="fa-solid fa-chart-simple"></i></i></div>
+                <div class="col-lg-9 d-none d-lg-block text-start">Stats</div>
+              </div>
+              <div class="row text-center my-2 fs-4">
+                <div class="col col-lg-3 "><i class="fa-solid fa-signal"></i></div>
+                <div class="col-lg-9 d-none d-lg-block text-start">Signals</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="container h-100 d-flex align-items-end justify-content-center px-0 py-3"> 
+              <div class="row text-center my-2 fs-4">
+                <div class="col col-lg-3 "><i class="fa-solid fa-gear"></i></div>
+                <div class="col-lg-9 d-none d-lg-block text-start">Settings</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
 <!-- MAIN -->
-    <main></main>
+
 <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+
+    </footer>
   </body>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

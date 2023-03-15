@@ -1,36 +1,74 @@
+.debug {
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 1px solid black;
+  min-height: 30px;
+}
+
+.debug-2 {
+  background-color: rgba(0, 0, 255, 0.2);
+  border: 1px solid black;
+  min-height: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+/* HEADER */
 header {
-  height: 90px;
-  margin-top: 15px;
-  margin bottom: 10px;
+  height: 80px;
+  justify-content: baseline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#search {
+  color: black;
+}
+
+picture img {
+  height: 40px;
+  object-fit: contain;
 }
 
 #top-left {
-  
-}
-
-#top-middle {
-  font-size: 30px;
-}
-
-#top-right {
-  
-  text-align: end;
-  align-items: center;
+  display: flex;
   flex-direction: row;
+  justify-content: end;
 }
 
-#list, #quest, #dots {
-  margin-right: 10px;
-  font-size: 20px;
+#space {
   color: grey;
+  font-size: 25px;
+  margin-left: 15px;
 }
 
 #bell {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 20px;
+  color: orange;
+  font-size: 25px;
+  margin-left: 15px;
 }
 
-#orange {
-  color: orange;
+.offcanvas {
+  width: 100% !important;
+}
+
+/* MAIN */
+main {
+  height: calc(100vh - 80px);
+}
+
+#sidebar {
+  background-color: rgb(5, 30, 52);
+  background-image: url(../img/sidebar-bg.png);
+  background-position: center;
+  color: white;
+  width: 80px;
+  height: calc(100vh - 80px);
+}
+
+@media screen and (min-width:992px) {
+  #sidebar {
+    width: 150px;
+  }
 }
